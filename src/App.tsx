@@ -27,6 +27,9 @@ function App() {
         {currentTab === Tabs.CARPOOL && <CarPool />}
         {currentTab === Tabs.CONTACT && <Contact />}
       </main>
+      <p> Pidou j'ai réussi
+      </p>
+      <p>Je t'aime</p>
       <Footer />
     </div>
   )
