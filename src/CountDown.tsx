@@ -26,7 +26,7 @@ const Countdown = () => {
 
   return (
     <div>
-      {timeRemaining.days} jours, {timeRemaining.hours} h {timeRemaining.minutes} minutes
+      <p className='text-green font-medium'>On se marrie dans {timeRemaining.days} jours !</p>
     </div>
   );
 };
