@@ -3,8 +3,6 @@ import { Header } from './layout/header'
 import { Program } from './sections/Program'
 import { Hosting } from './sections/Hosting'
 import { CarPool } from './sections/CarPool'
-import { Contact } from './sections/Contact'
-import { Footer } from './layout/Footer'
 import { Menu } from './layout/Menu'
 
 export enum Tabs {
