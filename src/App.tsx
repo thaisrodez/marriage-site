@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import { Header } from './header'
-import { Program } from './Program'
-import { Hosting } from './Hosting'
-import { CarPool } from './CarPool'
-import { Contact } from './Contact'
-import { Footer } from './Footer'
-import { Menu } from './Menu'
+import { Header } from './layout/header'
+import { Program } from './sections/Program'
+import { Hosting } from './sections/Hosting'
+import { CarPool } from './sections/CarPool'
+import { Contact } from './sections/Contact'
+import { Footer } from './layout/Footer'
+import { Menu } from './layout/Menu'
 
 export enum Tabs {
   PROGRAM = 'Déroulé de la journée',
@@ -18,19 +18,14 @@ function App() {
   const [currentTab, setCurrentTab] = useState<Tabs>(Tabs.PROGRAM)
 
   return (
-    <div className='my-4 mx-10'>
+    <div className='my-4 mx-4 lg:mx-10 text-black'>
       <Header />
-      <Menu setCurrentTab={setCurrentTab} />
-      <main>
+      <Menu currentTab={currentTab} setCurrentTab={setCurrentTab} />
+      <main className='my-8'>
         {currentTab === Tabs.PROGRAM && <Program />}
         {currentTab === Tabs.HOSTING && <Hosting />}
         {currentTab === Tabs.CARPOOL && <CarPool />}
-        {currentTab === Tabs.CONTACT && <Contact />}
       </main>
-      <p> Pidou j'ai réussi
-      </p>
-      <p>Je t'aime</p>
-      <Footer />
     </div>
   )
 }
