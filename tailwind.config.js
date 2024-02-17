@@ -9,7 +9,8 @@ export default {
       green: "#3c5f54",
       black: "#38383D"
     },
-    extend: {},
+    extend: {
+    },
   },
   plugins: [],
 }

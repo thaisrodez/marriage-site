@@ -10,11 +10,11 @@ export const Menu = ({ currentTab, setCurrentTab }: { currentTab: string, setCur
         {Tabs.PROGRAM}
       </button>
       <button
-        onClick={() => setCurrentTab(Tabs.HOSTING)}
-        className={currentTab === Tabs.HOSTING ? 'text-green underline underline-offset-4' : ''}
+        onClick={() => setCurrentTab(Tabs.HOUSING)}
+        className={currentTab === Tabs.HOUSING ? 'text-green underline underline-offset-4' : ''}
 
       >
-        {Tabs.HOSTING}
+        {Tabs.HOUSING}
       </button>
       <button
         onClick={() => setCurrentTab(Tabs.CARPOOL)}

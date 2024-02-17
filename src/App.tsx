@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import { Header } from './layout/header'
 import { Program } from './sections/Program'
-import { Hosting } from './sections/Hosting'
+import { Housing } from './sections/Housing'
 import { CarPool } from './sections/CarPool'
 import { Menu } from './layout/Menu'
 
 export enum Tabs {
-  PROGRAM = 'Déroulé de la journée',
-  HOSTING = 'Les logements',
+  PROGRAM = 'Jour J',
+  HOUSING = 'Logements',
   CARPOOL = 'Co-voiturage',
   CONTACT = 'Contact'
 }
@@ -21,7 +21,7 @@ function App() {
       <Menu currentTab={currentTab} setCurrentTab={setCurrentTab} />
       <main className='my-8'>
         {currentTab === Tabs.PROGRAM && <Program />}
-        {currentTab === Tabs.HOSTING && <Hosting />}
+        {currentTab === Tabs.HOUSING && <Housing />}
         {currentTab === Tabs.CARPOOL && <CarPool />}
       </main>
     </div>
