@@ -4,12 +4,13 @@ import { Program } from './sections/Program'
 import { Housing } from './sections/Housing'
 import { CarPool } from './sections/CarPool'
 import { Menu } from './layout/Menu'
+import { FAQ } from './sections/FAQ'
 
 export enum Tabs {
   PROGRAM = 'Jour J',
   HOUSING = 'Logements',
   CARPOOL = 'Co-voiturage',
-  CONTACT = 'Contact'
+  FAQ = 'FAQ'
 }
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         {currentTab === Tabs.PROGRAM && <Program />}
         {currentTab === Tabs.HOUSING && <Housing />}
         {currentTab === Tabs.CARPOOL && <CarPool />}
+        {currentTab === Tabs.FAQ && <FAQ />}
       </main>
     </div>
   )

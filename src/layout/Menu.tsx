@@ -23,7 +23,13 @@ export const Menu = ({ currentTab, setCurrentTab }: { currentTab: string, setCur
       >
         {Tabs.CARPOOL}
       </button>
-      {/* <button onClick={() => setCurrentTab(Tabs.CONTACT)} >{Tabs.CONTACT}</button> */}
+      <button
+        onClick={() => setCurrentTab(Tabs.FAQ)}
+        className={currentTab === Tabs.FAQ ? 'text-green underline underline-offset-4' : ''}
+
+      >
+        {Tabs.FAQ}
+      </button>
     </menu>
   )
 }
