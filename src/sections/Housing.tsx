@@ -4,7 +4,7 @@ export const Housing = () => {
       <p>Pour profiter de la fête, le Pavillon d'Aurabelle dispose de plus de 120 couchages sur place !</p>
       <p>Chambre dortoir avec lits superposés et salle de bain</p>
       <p>Tarif : 20€/nuit et par personne (+5€ pour les draps et serviettes)</p>
-      <p>Contactez-nous si vous souhaitez réservé un lit.</p>
+      <p>Contactez-nous si vous souhaitez réserver un lit.</p>
     </div>
 
   )
