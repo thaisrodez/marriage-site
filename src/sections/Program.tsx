@@ -24,7 +24,9 @@ export const Program = () => {
       <h4 className="font-medium text-green">Dimanche</h4>
       <div className="flex items-center">
         <img src={brunch} alt="Brunch" className="w-32 lg:w-[150px]" />
-        <p>Brunch, pétanque, farniente toute la journée</p>
+        <p>Brunch, pétanque, piscine et farniente toute la journée.
+          (Pensez à prendre votre maillot de bain).
+        </p>
       </div>
     </div>
   )
